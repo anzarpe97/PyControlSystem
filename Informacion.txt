@@ -1,1 +1,10 @@
-Este Block de notas va a ser usado para anotar cosas.
+
+--- Exportar o Importar Librerias Necesarias ---
+
+        Para sacar la lista de las librerias se usa:
+
+        - pip freeze > "requirements.txt"
+
+        Para instalar la lista de las librerias que se requiren:
+
+        - pip install -r "requirements.txt"
