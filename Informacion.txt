@@ -8,3 +8,13 @@
         Para instalar la lista de las librerias que se requiren:
 
         - pip install -r "requirements.txt"
+
+--- Para Correr El Proyecto --- 
+
+        Modo Produccion:
+
+         - flask --app 'nombre de la app' run
+
+        Modo Desarollador:
+
+        - flask --app 'nombre de la app' --debug run
