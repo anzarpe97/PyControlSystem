@@ -18,3 +18,7 @@
         Modo Desarollador:
 
         - flask --app 'nombre de la app' --debug run
+
+--- Puerto ---
+
+        Running on http://127.0.0.1:5000

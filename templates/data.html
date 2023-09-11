@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+{% block title %}Mis Datos{% endblock %}
+
+{% block content %}
+
+    <h2>Mis datos</h2>
+
+    {% if data.name == none and data.age == none and data.email == none %}
+        <h3>No hay datos disponibles :(</h3>
+
+    {% elif data.age == none and data.email == none %}
+
+        <ul>
+            <li>Nombre: {{data.name}}</li>
+            <li>Edad: No Disponible</li>
+            <li>Correo: No Disponible</li>
+        </ul>
+
+    {% elif data.email == none %}
+
+        <ul>
+            <li>Nombre: {{data.name}}</li>
+            <li>Edad: {{data.age}}</li>
+            <li>Correo: No Disponible</li>
+        </ul>
+
+    {% else %}
+
+        <ul>
+            <li>Nombre: {{data.name}}</li>
+            <li>Edad: {{data.age}}</li>
+            <li>Correo: {{data.email}}</li>
+        </ul>
+
+    {% endif %}
+
+{% endblock %}
