@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/login_style.css')}}">
+    <title>Login - Inventario </title>
+</head> 
+<body>
+    <div class="center">
+
+        <h1>Login</h1>
+        <form method="post">
+            
+            <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label for="">Usuario</label>
+            </div>
+            
+            <div class="txt_field">
+                <input type="password" required>
+                <span></span>
+                <label for="">Contraseña</label>
+            </div>
+
+            <div class="pass">¿Olvidó su contraseña?</div>
+
+            <input type="submit" value="Ingresar">
+
+
+        </form>
+    </div>
+</body>
+</html>
